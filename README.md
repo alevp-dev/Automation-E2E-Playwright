@@ -56,7 +56,7 @@ npx playwright test --project=firefox
 npx playwright test tests/e2e/login-validation.spec.js
 ```
 
-# Ver reporte de pruebas:
+## Ver reporte de pruebas:
 ```
 npx playwright show-report
 ```
@@ -74,7 +74,7 @@ npx playwright show-report
 * Capturas de pantalla y videos en caso de fallos
 * Ejecución secuencial para mayor estabilidad
 
-# Contributions
+## Contributions
 Contributions, issues, and feature requests are welcome! Feel free to fork this repository and submit a pull request.
 
 ---
