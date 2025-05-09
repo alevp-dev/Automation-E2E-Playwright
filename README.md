@@ -15,11 +15,6 @@ Este proyecto contiene pruebas automatizadas end-to-end para la aplicación web 
 git clone <url-del-repositorio>
 ```
 
-## Ejecutar las pruebas:
-```
-npx playwright test
-```
-
 ## Estructura del proyecto
 ```
 Automation_E2E/
@@ -40,10 +35,14 @@ Automation_E2E/
 └── README.md               # Documentación del proyecto
 ```
 
-## Ejecutar las pruebas
+## Ejecutar pruebas
 En modo secuencial (recomendado para mayor estabilidad):
 ```
 npx playwright test --workers=1
+```
+También
+```
+npx playwright test 
 ```
 
 * En navegadores especificos:
