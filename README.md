@@ -73,3 +73,9 @@ npx playwright show-report
 * Reportes detallados de ejecución
 * Capturas de pantalla y videos en caso de fallos
 * Ejecución secuencial para mayor estabilidad
+
+# Contributions
+Contributions, issues, and feature requests are welcome! Feel free to fork this repository and submit a pull request.
+
+---
+Developed with ❤️ by **Alejandra Villa Posada**
