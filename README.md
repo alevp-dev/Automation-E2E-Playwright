@@ -21,6 +21,7 @@ npx playwright test
 ```
 
 ## Estructura del proyecto
+```
 Automation_E2E/
 ├── pages/                  # Page Objects (Objetos de página)
 │   ├── loginPage.js        # Página de inicio de sesión
@@ -37,6 +38,7 @@ Automation_E2E/
 │       └── testDataFixture.js
 ├── playwright.config.js    # Configuración de Playwright
 └── README.md               # Documentación del proyecto
+```
 
 ## Ejecutar las pruebas
 En modo secuencial (recomendado para mayor estabilidad):
