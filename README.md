@@ -73,6 +73,85 @@ npx playwright show-report
 * Capturas de pantalla y videos en caso de fallos
 * Ejecución secuencial para mayor estabilidad
 
+----
+# E2E Automation with Playwright
+
+This project contains end-to-end automated tests for the Sauce Demo web application using Playwright.
+
+## Prerequisites
+
+* Node.js (version 14 or higher)  
+* NPM (Node Package Manager)  
+* Supported browsers (Chrome and Firefox)
+
+## Installation
+
+1. Clone the repository:
+```
+git clone <repository-url>
+```
+
+## Project Structure
+```
+Automation_E2E/
+├── pages/                  # Page Objects
+│   ├── loginPage.js        # Login page
+│   ├── inventoryPage.js    # Inventory page
+│   ├── cartPage.js         # Cart page
+│   └── checkoutPage.js     # Checkout page
+├── tests/                  # Test files
+│   ├── e2e/                # End-to-end tests
+│   │   ├── login-validation.spec.js
+│   │   ├── successful-purchase.spec.js
+│   │   └── alternate-scenarios.spec.js
+│   └── fixtures/           # Test data
+│       ├── loginFixture.js
+│       └── testDataFixture.js
+├── playwright.config.js    # Playwright configuration
+└── README.md               # Project documentation
+```
+
+## Running Tests
+Sequential mode (recommended for higher stability):
+```
+npx playwright test --workers=1
+```
+Also:
+```
+npx playwright test
+```
+
+* On specific browsers:
+```
+npx playwright test --project=chromium
+npx playwright test --project=firefox
+```
+
+* On specific files:
+```
+npx playwright test tests/e2e/login-validation.spec.js
+```
+
+## View Test Report:
+```
+npx playwright show-report
+```
+
+## Technologies Used
+
+* Playwright: Automated testing framework  
+* JavaScript: Programming language used  
+* Node.js: JavaScript runtime environment
+
+## Key Features
+
+* Implementation of the Page Object Model (POM) pattern  
+* Cross-browser testing (Chrome and Firefox)  
+* Test data management using fixtures  
+* Detailed execution reports  
+* Screenshots and videos on test failures  
+* Sequential execution for better stability
+
 ## Contributions
 Contributions, issues, and feature requests are welcome! Feel free to fork this repository and submit a pull request.
 
