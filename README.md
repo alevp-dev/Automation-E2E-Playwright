@@ -46,12 +46,12 @@ En modo secuencial (recomendado para mayor estabilidad):
 npx playwright test --workers=1
 ```
 
-# En navegadores especificos:
+* En navegadores especificos:
 ```
 npx playwright test --project=chromium
 npx playwright test --project=firefox
 ```
-# En archivos especificos:
+* En archivos especificos:
 ```
 npx playwright test tests/e2e/login-validation.spec.js
 ```
